@@ -7,4 +7,4 @@ It was great experience and there are some new things for me:
 * how to operate with Git, 
 * commands, 
 * interaction with system and Github,
-* how to use GitHub to collaborate and work in other peoples in team 
+* how to use GitHub to collaborate and work with other peoples in team 
