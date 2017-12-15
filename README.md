@@ -8,3 +8,9 @@ It was great experience and there are some new things for me:
 * commands, 
 * interaction with system and Github,
 * how to use GitHub to collaborate and work with other peoples in team 
+
+## Task 1
+
+1. "Linux Command Line Basics" course
+
+I already had some experience with Linux terminal and filesystem but in this course i've discovered some interesting features. It was interesting and useful course.
