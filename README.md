@@ -27,10 +27,10 @@ For better understanding Networking For Web-Developers and Configuring Linux Web
 
 ## Task 2
 
-### Version_Control_with_Git
+### Version Control with Git
 I've discovered some great features and commands from this course (git revert/reset) also it show me that git log is a VERY POWERFUL thing and couple amazing options what can git log do for me
 
-## GitHub & Collaboration 
+### GitHub & Collaboration 
 This one was fine too for me because it helped me dive into Github world and teached me some great features like git rebase.
 
 ![Screenshot](task_2/Version_Control_with_Git.png)
