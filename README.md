@@ -32,3 +32,6 @@ I've discovered some great features and commands from this course (git revert/re
 
 ## GitHub & Collaboration 
 This one was fine too for me because it helped me dive into Github world and teached me some great features like git rebase.
+
+![Screenshot](task_2/Version_Control_with_Git.png)
+![Screenshot](task_2/GitHub_&_Collaboration.png)
