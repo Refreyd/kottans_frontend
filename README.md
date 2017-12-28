@@ -41,7 +41,8 @@ This one was fine too for me because it helped me dive into Github world and tea
 ### HTML and CSS Syntax
 Almost all of this information wasn't new, but it's fine for refresh my memory :)
 
-![Screenshot](task_3/HTML_and_CSS_Syntax.png)
+<<<<<<< HEAD
+![Screenshot](task_3/HTML-and-CSS-Syntax.png)
 
 ## Task 4
 
@@ -56,8 +57,4 @@ This course showed me some tricky and useful things in responsive
 I did this one in August, guys who made it are really good teachers. For person who never faced JS it's great for start and course give the understanding of all basic fundamentals of JS ( but to gain better perception of this it's good idea to use some additional sources during the course ).
 
 ![Screenshot](task_5/task5.png)
-
-
-
-
 
