@@ -41,7 +41,7 @@ This one was fine too for me because it helped me dive into Github world and tea
 ### HTML and CSS Syntax
 Almost all of this information wasn't new, but it's fine for refresh my memory :)
 
-<<<<<<< HEAD
+
 ![Screenshot](task_3/HTML-and-CSS-Syntax.png)
 
 ## Task 4
