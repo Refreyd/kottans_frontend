@@ -21,7 +21,7 @@
 			<button class ="button" name="sign in"><i class="fa fa-user" aria-hidden="true"></i>Sign In</button>
 		</div>
    	</header>
-	<form action="#" method="post">
+	<form action="#" method="post" id="main-form">
 
 	<div class="mega-order-container">
 		
@@ -40,8 +40,8 @@
 					</div>
 				</div>
 					 <div class="button-orders">
-                    <input id="place-order" class="green-order-button button-new" type="submit" value="place order" form="order-form">
-                    <input class="button-new" type="submit" value="print a quote" form="order-form">
+                    <input id="place-order" class="green-order-button button-new" type="submit" value="place order" form="main-form">
+                    <input class="button-new" type="submit" value="print a quote" form="main-form">
                 	</div>
 					<div class="help-center">					
 							<ul class="center-info">
@@ -81,7 +81,7 @@
 
 									
 										<label class="select-label">
-									  <input required type="radio" name="select-control" value="website" hidden=>
+									  <input required type="radio" name="select-control" value="website" hidden>
 									<div class="select-wrapper" id="social">
 									   <img src="img/social_account.png" alt="social">
 									   <p>Social Account</p>   
@@ -90,67 +90,122 @@
 							</section>
 						</div>
 					
-							<div class="upload-main">
-								<div class="upload-header">
-									<span class="upload-text">Upload your documents</span><span class="upload-types">(Doc, Docx, Text, PDF, Markdown)</span>
-								</div>
+							<fieldset class="upload-main">
+								<legend>
+									Upload your documents <small>(Doc, Docx, Text, PDF, Markdown)</small>
+								</legend>
 								<div class="upload-button">
 
 									<button class ="button-new" name="UPLOAD"><span class="icon fa fa-cloud"></span>Upload a new file</button>
 								</div>
+
 								<div class="upload-table">
 									<div class="upload-element">
-										<ul><h4>FILE NAME</h4>
+										<span>FILE NAME</span><ul>
 										<li><span class="fa fa-file"></span><a href="m">business_operations.docx</a></li>
 										<li><span class="fa fa-file"></span><a href="m">business_financial.docx</a></li>
 										</ul>
 									</div>
 									<div class="upload-element">
-										<ul><h4>FILE SIZE</h4>
+										<span>FILE SIZE</span><ul>
 										<li>78kb</li>
 										<li>26kb</li>
 									</ul>
 									</div>
 									<div class="upload-element">
-										<ul><h4>NUMBER OF WORDS</h4>
+										<span>NUMBER OF WORDS</span><ul>
 										<li>842</li>
 										<li>2,326</li>
 									</ul>
 									</div>
 									<div class="upload-element">
-										<ul><h4>REMOVE</h4>
-										<li><span class="fa fa-trash"></span></li>
-										<li><span class="fa fa-trash"></span></li>
+										<span>REMOVE</span><ul>
+										<li><button class="trash-button"><span class="fa fa-trash"></span></button></li>
+										<li><button class="trash-button"><span class="fa fa-trash"></span></button></li>
 									</ul>
 									</div>
 								</div>
+							</fieldset>
+
+						<fieldset class="fieldset-language">
+								<legend>
+								Choose your language pairings</legend>
+							<div class="language-block">
+
+								<label for="from-language">From</label>
+								<div class="language-style">
+
+									<select name="from" id="from-language">
+										<option value="Arabic">Arabic</option>
+										<option value="Czech">Czech</option>
+										<option value="Danish">Danish</option>
+										<option selected value="English">English</option>
+										<option value="French">French</option>
+										<option value="Kurdish">Kurdish</option>
+										<option value="Latin">Latin</option>
+										<option value="Zulu">Zulu</option>
+									</select>
+								</div>	
+
+							</div>
+							
+
+
+							<div class="language-block">
+
+								<label for="to-language">To</label>
+								<div class="language-style">
+
+									<select name="to" id="to-language">
+										<option selected value="Arabic">Arabic</option>
+										<option value="Czech">Czech</option>
+										<option value="Danish">Danish</option>
+										<option value="English">English</option>
+										<option value="French">French</option>
+										<option value="Kurdish">Kurdish</option>
+										<option value="Latin">Latin</option>
+										<option value="Zulu">Zulu</option>
+									</select>
+								</div>	
+							
+								<div class="language-style">
+
+									<select name="from-more">
+										<option value="Arabic">Arabic</option>
+										<option value="Czech">Czech</option>
+										<option value="Danish">Danish</option>
+										<option value="English">English</option>
+										<option value="French">French</option>
+										<option selected value="Kurdish">Kurdish</option>
+										<option value="Latin">Latin</option>
+										<option value="Zulu">Zulu</option>
+									</select>
+
+								</div>	
+							
+
+							<div class="language-button">
+								<i class="fa fa-trash del-lang"></i>
+								<button class ="button-new" name="UPLOAD"><span class="fa fa-plus" aria-hidden="true"></span>ADD</button>
+
 							</div>
 
-								<div class="upload-header">
-									<span class="upload-text">Choose your language pairings</span>
-								</div>
-								<div class="main-language language-block">
-									<div class="language-element lang-block-elem"><span>FROM</span>
-										<button class ="button-new" name="UPLOAD">English</button>
-									</div>
-									<div class="language-element lang-block-elem"><span>TO</span><button class ="button-new" name="UPLOAD">Arabic</button>
-									</div>
-									<div class="language-element lang-block-elem"><button class ="button-new" name="UPLOAD">Kurdish</button><span class="fa fa-trash"></span>
-									</div>
-									<div class="language-element lang-block-elem"><button class ="button-new" name="UPLOAD"><span class="fa fa-plus" aria-hidden="true"></span>ADD</button>
-									</div>
-								</div>
+
+							</div>	
+									
+						</fieldset>
+						
 
 							<div class="three-four-block">
 								<div class="header-three-four">
-										<div class ="three-four-elem three-block"><span class="upload-text">Select your desired tone</span>
+										<div class ="three-four-elem three-block">
 										<div class="item-container">
-							<section>
-									
+							<fieldset>
+									<legend>Select your desired tone</legend>
 										<label class="select-label">
 									  <input required type="radio" name="select-control" value="friendly" hidden>
 									<div class="select-wrapper" id="friendly">
-									    <span class="selected-three-label"><span class="fa fa-comments"></span>Friendly / Casual</span></span>
+									    <span class="selected-three-label"><span class="fa fa-comments"></span>Friendly / Casual</span>
 									</div>
 									  </label>
 										
@@ -158,43 +213,44 @@
 										<label class="select-label">
 									  <input required type="radio" name="select-control" value="corporate" hidden>
 									  	<div class="select-wrapper" id="corporate">
-									    <span class="selected-three-label"><span class="fa fa-suitcase"></span>Corporate / Pro</span></span>
+									    <span class="selected-three-label"><span class="fa fa-suitcase"></span>Corporate / Pro</span>
 										</div>
 										</label>
 
 									
 										<label class="select-label">
-									  <input required type="radio" name="select-control" value="media-formal" hidden=>
+									  <input required type="radio" name="select-control" value="media-formal" hidden>
 									<div class="select-wrapper" id="media-formal">
 									      <span class="selected-three-label"><span class="fa fa-bullhorn"></span>Media / Formal</span>
 										</div>
 										</label>
-							</section>
+							</fieldset>
 						</div>
 									</div>
-									<div class="three-four-elem"><span class="upload-text">Tell us how urgent this job is</span>
+									<fieldset class="three-four-elem"><legend>Tell us how urgent this job is</legend>
 										<div class="average-yesterday">
 											<input type="range" name="urgent" min="-10" max="10" step="10" value="0">
 											<ul>
 												<li>I GOT TIME</li>
-												<li>AVERAGE</li>
+												<li><span class="average">average</span></li>
 												<li>YESTERDAY</li>
 											</ul>
 										</div>
 										<div class="timeline-info">
 											<ul>
 												<li><h3><span class="fa fa-info-circle"></span>TIMELINE INFO</h3></li>
-												<li>With an AVERAGE timeline set up, our expert translator can take reasonable amount of time perfecting your translation.</li>
+												<li>With an <span class="average">average</span> timeline set up, our expert translator can take reasonable amount of time perfecting your translation.</li>
 											</ul>
 										</div>
-									</div>
+									</fieldset>
 								</div>
 							</div>
 							
 		
 									<!-- begun -->
 						<fieldset class="payment-block">
-							<legend>Sign up and choose a payment method</legend>
+							<legend>
+							Sign up and choose a payment method</legend>
 						<h3>Already have an account with us? <a href="s">Sign in.</a></h3>			
 						<ul class="sign-up-block">
 							<li><label for="name">Full Name</label>
@@ -231,7 +287,7 @@
 
 									
 										<label class="select-label">
-									  <input required type="radio" name="select-control" value="website" hidden=>
+									  <input required type="radio" name="select-control" value="website" hidden>
 									<div class="select-wrapper" id="amazon">
 									   <img src="img/amazon.png" alt="amazon">
 									   
@@ -243,10 +299,10 @@
 						
 					
 							<ul class="payment-block card-info-block">
-							<li><label for="name">Card Number</label>
-            <input type="text" name="name" class="box" id="name" pattern="[A-Za-z' -]+" minlength="2" maxlength="50" required placeholder></li>
-							<li><label for="email">Expiry date</label>
-            <input type="text" name="expiry-date" class="box" id="expiry-date" placeholder="DD / MM / YY" min="2018-01-01" required></li>
+							<li><label for="card-number">Card Number</label>
+            <input type="text" name="card-number" class="box" id="card-number" pattern="[A-Za-z' -]+" minlength="2" maxlength="50" required></li>
+							<li><label for="expiry">Expiry date</label>
+            <input type="date" name="expiry" class="box" id="expiry" min="2018-01-01" required></li>
 							<li><label for="code">Code</label>
             <input type="text" name="code" class="box" id="code" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Code of your card"></li>
 							</ul>
@@ -296,7 +352,8 @@
 				Linkedin</p>
 			</div>
 			<div>
-				<img src="img/logo-footer.png" alt="logo-footer">
+				<a href="#"><img src="img/logo-footer.png" alt="logo-footer"></a>
+				
 			</div>
 		</section>
 	</footer>

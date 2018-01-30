@@ -31,7 +31,8 @@ div {
 .button:hover,
 .button-new:hover,
 .fa:hover,
-a:hover{
+a:hover,
+.language-style:hover{
 	opacity: 0.65;
 }
 
@@ -302,7 +303,6 @@ width: 40%;
 }
 
 .select-label input:checked + .select-wrapper:after {
-	display: inline-block;
 	  content: '\f00c';
 	  font-family: 'Font Awesome 5 Free';
 	  font-weight: 900;
@@ -339,6 +339,12 @@ width: 40%;
 	padding-top: 10%; 
 	width: 30%;	
 }
+.upload-element > span{
+	padding-left: 40px;
+	display: inline-block;
+	padding-top: 30px;
+	font-size: 100%;
+}
 
 
 .upload-main{
@@ -351,12 +357,47 @@ width: 40%;
 .upload-text{
 	font-size: 200%;
 }
-legend{
-	padding: 0% 0% 7.5% 0%; 
-	font-size: 200%;
+
+.trash-button{
+	border: 0px solid #fff;
+	width: 20px;
+	background: transparent;
+	margin-left: 15%;
 }
 
-/*LEGEND HERE*/
+legend{
+	padding: 0px 0% 60px 0%; 
+	font-size: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+form{
+	counter-reset: legend;
+}
+
+fieldset > legend:before{
+	width: 30px;
+	height: 30px;
+	counter-increment: legend;
+	content: " " counter(legend);
+	display: inline-block;
+	border: 2px solid #6e768f;
+	border-radius: 50%;
+	position: absolute;
+	left: -40px;
+	text-align: center;
+
+}
+
+small{
+	font-size: 60%;
+	color: #a9a5be;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+
 .upload-header span:nth-child(2){
 	padding-left: 2.5%; 
 }
@@ -408,38 +449,93 @@ a{
 	padding-left: 20%;
 }
 
-.main-language{
-	display: flex;
-	flex-flow: row wrap; 
+/*Languages start here*/
+.language-style {
+ display: inline-block;
+ border: 1px solid #d7d8e0;
+ border-radius: 4px;
+ width: 180px;
+ height: 45px;
+ background-color: #f7f7fa;
+ position: relative;
+ margin-right: 2.5%;
+ margin-bottom: 40px;
 }
 
-.language-block{
-	padding-bottom: 5%;
+.language-style:after {
+ content: "";
+ position: absolute;
+ top: 20px;
+ right: 20px;
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 7px 4px 0 4px;
+ border-color: #9098b8 transparent transparent transparent;
+ pointer-events: none;
 }
 
-.lang-block-elem{
-	padding-bottom: 5%;
+.language-style:before {
+ content: '';
+ position: absolute;
+ width: 1px;
+ height: 100%;
+ top: 0;
+ right: 45px;
+ background-color: #d7d8e0;
+ pointer-events: none;
 }
 
-.language-element{
-	flex: 1 1 auto;
-	
+.language-style select {
+ text-align-last:center;
+ padding: 7% 0rem 7.5px 1rem;
+ width: 90%;
+ border: none;
+ box-shadow: none;
+ background: transparent;
+ -webkit-appearance: none;
+ color: #9098b7;
+ font-size: 16px;
+ cursor: pointer;
 }
 
-.main-language .language-element:nth-child(1){
-	flex: 100%;
-}
-
-.main-language .language-element:nth-child(4){
-	flex: 45%;
-}
-
-.language-element span{
+.language-block label{
+	width: 40px;
+	text-align: right;
 	display: inline-block;
-	text-align: center;
-	width: 3rem;
-	
+	padding-right: 20px;
+	text-transform: uppercase;
 }
+
+.language-button{
+	
+	display: inline-block;
+	height: 45px;
+
+}
+
+.language-button .button-new{
+
+	width: 110px;
+	height: 100%;
+	padding-top: 4%;
+}
+
+.language-button .button-new span{
+	padding-right: 10px;
+	font-size: 100%;
+
+}
+
+.fieldset-language{
+	padding-bottom: 7.5%;
+}
+
+.del-lang{
+	padding-right: 30px;
+	cursor: pointer;
+}
+/*Languages end*/
 .header-three-four{
 	
 	display: flex;
@@ -605,6 +701,12 @@ input[type=range]:focus::-ms-fill-upper {
 	border: 1px solid #e5e7ed;
 }
 
+.average{
+	color: orange;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
 .timeline-info ul{
 	position: relative;
 	list-style: none;
@@ -620,6 +722,7 @@ input[type=range]:focus::-ms-fill-upper {
 fieldset{
 	padding: 0;
 	border: 0px solid #a99;
+
 }
 
 .sign-up-block{
@@ -783,4 +886,9 @@ fieldset{
 	position: absolute;
 	left: -40px;
 	font-size: 140%;
+}
+
+footer div img{
+	width: 50%;
+	padding-top: 10%;
 }
