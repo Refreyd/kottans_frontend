@@ -91,7 +91,7 @@ header i{
 .icon-img,
 .button-sign-in {
 		order: 0;
-	flex-grow: 33%;
+	
 	flex-shrink: 1;
 	flex-basis: auto;
 	align-self: auto;
@@ -199,7 +199,6 @@ margin: 5% 0%;
 	display: flex;
 	flex-direction: row;
 	flex-flow: row nowrap;
-	align-items: left;
 	justify-content: flex-start;
 	margin-left: 0%;
 	padding-top: 1.5%;

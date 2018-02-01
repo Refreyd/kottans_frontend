@@ -1,0 +1,236 @@
+
+html {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    color: #2e3d49;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header{
+	background-color: ff831e;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.logo-header img{
+	width: 360px;
+	height: 100%;
+}
+
+/* CLOCK ALL START*/
+@font-face{
+ font-family:'digital-7';
+ src: url('../fonts/digital-7.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header .time-header {
+	padding-left: 0px;
+	padding-top: 110px;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: 'digital-7', sans-serif;
+
+}
+
+
+
+/* DAYS OF THE WEEK */
+.time-header div.days {
+	margin: 0 auto;
+	color: #131212;
+}
+
+.time-header div.days .day {
+	display: inline-block;
+}
+
+.time-header div.days .day p {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+
+/* CLOCK */
+.time-header div.clock {
+	margin: 5px 0;
+	text-align: right;
+}
+
+.time-header div.clock div{
+	display: inline-block;
+	position: relative;
+}
+
+.time-header div.clock div p{
+	font-size: 80px;
+	position: relative;
+	z-index: 100;
+}
+
+.time-header div.clock .placeholder {
+	color: #131212;
+	position: absolute;
+	top: 0;
+	z-index: 50;
+}/*END CLOCK*/
+
+
+/* AM OR PM*/
+.time-header .am-pm {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	width: 20px;
+}
+
+.time-header div.am-pm div p {
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.time-header .am, .pm {
+	color: #131212;
+}
+
+/*CLASS THAT CHANGES COLOR OF TEXT TO APPEAR LIKE ITS "ON"*/
+.time-header .light-on {
+	color: #ffffff;
+}
+/*CLOCK FULL END*/
+
+/*Header buttons*/
+.login-sign{
+	background: black;
+	flex-grow: 1;
+	padding-top: 110px;
+}
+
+.login-sign button{
+	width: 200px;
+	height: 40px;
+	background: #fff;
+	display: block;
+	margin-top: 10px;
+	margin-left: 80px;
+	font-size: 16px;
+}
+
+/*end of header buttons*/
+
+h1{
+	display: inline-block;
+	text-align: center;
+}
+main{
+	background: black;
+}
+.add-new-pizza{
+	padding-top: 100px;
+	padding-left: 42%;
+
+}
+.add-new-pizza button{
+	width: 200px;
+	background: #ff831e;
+	color: #fff;
+	height: 60px;
+	border-radius: 2%;
+	font-size: 20px;
+}
+
+.basic-pizza-container{
+	background: black;
+	border: 1px solid #fff;
+	display: inline-block;
+	margin: 0% 20px;
+	border-radius: 2.5%;
+}
+
+.main-pizza-container{
+	margin-top: 10%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	color: #fff;
+}
+
+.basic-pizza-container{
+	margin-top: 10px;
+	
+}
+
+.image-pizza img{
+	
+	width: 250px;
+	height: 250px;
+
+
+}
+
+
+
+.pizza-time,
+.pizza-quepe,
+.pizza-eta,
+.pizza-price{
+	display: inline-block;
+	flex-grow: 1;
+}
+
+.top-pizza,
+.bottom-pizza{
+	display: flex;
+	flex-flow: row;
+	padding: 5%;
+}
+
+.pizza-price,
+.pizza-quepe{
+	text-align: right;
+}
+
+/*footer*/
+footer{
+	height: 200px;
+	
+	background: black;
+	color: #fff;
+	padding-top: 20px;
+}
+
+.footer-main-block{
+	border-top: 1px solid #fff;
+	margin-top: 100px;
+	height: auto;
+	padding-top: 40px;
+}
+
+.footer-main-block span{
+	width: 100%;
+	font-size: 100%;
+}
+
+.footer-main-block span:last-child{
+	text-align: right;
+	padding-left: 50%;
+}
+
+
+.footer-main-block span:first-child{
+	text-align: right;
+	padding-left: 7%;
+}
