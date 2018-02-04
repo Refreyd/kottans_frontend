@@ -386,7 +386,7 @@ fieldset > legend:before{
 	position: absolute;
 	left: -40px;
 	text-align: center;
-
+	line-height: 30px;
 }
 
 small{
